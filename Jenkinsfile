@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     withDockerRegistry(credentialsId: 'docker-cred', toolName: 'docker') {
-                        sh "docker build -t tharunv/frontend:latest ."
+                        sh "docker build -t tharunv9053/frontend:latest ."
                     }
                 }
             }
@@ -16,7 +16,7 @@ pipeline {
             steps {
                 script {
                     withDockerRegistry(credentialsId: 'docker-cred', toolName: 'docker') {
-                        sh "docker push tharunv/frontend:latest"
+                        sh "docker push tharunv9053/frontend:latest"
                     }
                 }
             }
